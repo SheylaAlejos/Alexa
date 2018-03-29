@@ -34,6 +34,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements TextToSpeech.OnInitListener {
 
     private static final int RECONOCEDOR_VOZ = 7;
+
     private TextView escuchando;
 
 //    private ProgressBar progressBar;
