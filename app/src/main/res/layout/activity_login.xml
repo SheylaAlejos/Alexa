@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rmiya.com.assistent.LoginActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="@android:integer/config_longAnimTime"
+        android:background="@drawable/fodo1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="top"
+            android:scaleType="fitXY"
+            android:background="@drawable/alexalogo"
+            android:contentDescription="@string/loginActivity_ImageDescription" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/bc_bacgroundlogin"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:drawableStart="@drawable/iuser"
+                android:gravity="center"
+                android:hint="@string/loginActivity_HintUser"
+                android:inputType="number"
+                android:paddingBottom="15dp"
+                android:textColor="#fff"
+                android:textColorHint="#CCFFFFFF"
+                android:textSize="20sp"
+                android:theme="@style/CampoTextoWhite" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user"
+                android:drawableStart="@drawable/lock"
+                android:gravity="center"
+                android:hint="@string/loginActivity_HintPass"
+                android:inputType="textPassword"
+                android:paddingBottom="15dp"
+                android:textColor="#fff"
+                android:textColorHint="#CCFFFFFF"
+                android:textSize="20sp"
+                android:theme="@style/CampoTextoWhite" />
+
+            <Button
+                android:id="@+id/enviar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/loginActivity_ButtonName"
+                android:onClick="Enviar"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
